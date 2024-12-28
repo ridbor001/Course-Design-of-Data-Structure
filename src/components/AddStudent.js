@@ -45,7 +45,7 @@ const AddStudent = ({ onStudentAdded }) => {
 
   return (
     <form onSubmit={handleSubmit} className="add-student-form">
-      <h2 className="form-title">Add New Student</h2>
+      <h2 className="form-title">添加学生</h2>
       <div className="form-group">
         <label htmlFor="studentId">学号:</label>
         <input
@@ -54,19 +54,19 @@ const AddStudent = ({ onStudentAdded }) => {
           value={studentId}
           onChange={(e) => setStudentId(e.target.value)}
           className="form-input"
-          placeholder="Enter Student ID"
+          placeholder="输入学号"
           required
         />
       </div>
       <div className="form-group">
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">姓名:</label>
         <input
           id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="form-input"
-          placeholder="Enter Student Name"
+          placeholder="输入姓名"
           required
         />
       </div>
@@ -78,7 +78,7 @@ const AddStudent = ({ onStudentAdded }) => {
           value={cLanguage}
           onChange={(e) => setCLanguage(e.target.value)}
           className="form-input"
-          placeholder="Enter C Language Score"
+          placeholder="输入C语言成绩"
           required
         />
       </div>
@@ -90,7 +90,7 @@ const AddStudent = ({ onStudentAdded }) => {
           value={math}
           onChange={(e) => setMath(e.target.value)}
           className="form-input"
-          placeholder="Enter Math Score"
+          placeholder="输入数学成绩"
           required
         />
       </div>
@@ -102,11 +102,11 @@ const AddStudent = ({ onStudentAdded }) => {
           value={chinese}
           onChange={(e) => setChinese(e.target.value)}
           className="form-input"
-          placeholder="Enter Chinese Score"
+          placeholder="输入语文成绩"
           required
         />
       </div>
-      <button type="submit" className="submit-btn">Add Student</button>
+      <button type="submit" className="submit-btn">添加学生</button>
     </form>
   );
 };
